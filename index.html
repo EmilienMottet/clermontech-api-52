@@ -1,40 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Clermont'ech APIHour 52</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/solarized.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>2023</h1>
+          <h2>l'année du desktop Linux !</h2>
+        </section>
+        <section>
+          <section>
+            <img src="./img/chair.png" alt="Chaise Ergonomiques" />
+          </section>
+          <section>
+            <img src="./img/laptop.png" alt="Laptop" />
+          </section>
+          <section>
+            <img src="./img/Tux.png" alt="Tux" />
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+						## Une philosophie
+						- KISS
+						- DOT&DIW
+						</textarea
+            >
+          </section>
+          <section>
+            <h2>Keep It Simple and Stupid</h2>
+            <aside class="notes">
+              distribution légère et rapide dont le concept est de rester la
+              plus simple possible <br />
+							tout est fichier <br />
+            </aside>
+          </section>
+          <section>
+            <h2>Do One Thing and Do It Well</h2>
+            <pre><code data-trim data-noescape>
+            $ seq 1 6 | shuf | head -n 1
+						</code></pre>
+            <aside class="notes">
+              écrire des programmes qui font une seule chose <br />
+              écrire des programmes qui fonctionnent entre eux <br />
+              écrire des programmes qui gère des flux textuels car c'est un
+              format universel <br />
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+            ## Une distro et go
+            - Des choix de paquets
+            - Un gestionnaire de paquet
+            - Un installateur
+						</textarea
+            >
+          </section>
+          <section data-markdown>
+            <textarea data-template>
+            ## Fake news
+            - Uniquement pour les nerds
+            - Plug and pray
+            - Les mises à jours cassent tout
+						</textarea
+            >
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Les avantages</h2>
+            <img src="./img/perks.gif" alt="Des avantages" />
+          </section>
+          <section>
+            <h2>Décompositions d'un environnement</h2>
+            <ul>
+              <li>Système de fichiers</li>
+              <li>Display Manager</li>
+              <li>Windows Manager</li>
+              <li>Network Manager</li>
+              <li>Serveurs multimedias</li>
+            </ul>
+            <aside class="notes">
+              si vous ne voulez pas vous cassez la tête avec ça vous installer
+              un desktop environnement genre gnome, kde, lxde, ... <br />
+              qui n'a jamais eu de pb de son sous linux ? <br />
+              découpable des FS Un découplage qui donne une liberté <br />
+              réduction des adhérences <br />
+              lsp
+            </aside>
+          </section>
+          <section>
+            <h2>Mon laptop ressemble à mon serveur</h2>
+            <ul>
+              <li>bash</li>
+              <li>Des services</li>
+              <li>performances de ma machine</li>
+            </ul>
+            <aside class="notes">
+              démo systemctl bluetooth ou docker <br />
+            </aside>
+          </section>
+          <section>
+            <h2>Un terrain de jeu illimité</h2>
+            <ul>
+              <li>Tout est accesibles</li>
+              <li>Une documentation infinie</li>
+              <li>Une librairie outils immense</li>
+            </ul>
+            <aside class="notes">
+              monitor yourself<br />
+              opensource <br />
+            </aside>
+          </section>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+						## Les désavantages
+						</textarea
+            >
+          </section>
+          <section>
+            <img src="./img/time.gif" alt="Plus assez de temps !" />
+          </section>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section>
+          <section data-auto-animate>
+            <h2>Spoil</h2>
+          </section>
+          <section data-auto-animate>
+            <h2>Spoil</h2>
+            <h2>Linux a déjà gagné</h2>
+          </section>
+					<section>
+						<img src="./img/cloud.jpg" alt="" />
+					</section>
+          <section data-markdown>
+            <textarea data-template>
+            - Chrome OS
+            - Windows se Linuxify
+              - wls
+              - ebpf
+              - lsp
+						</textarea
+            >
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
